@@ -1,0 +1,180 @@
+/* font-family: 'Manrope', sans-serif; */
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 0.8125rem;
+    background-color: var(--Light-Grayish-Blue);
+    font-family: 'Manrope', sans-serif;
+}
+.main {
+    width: 45rem;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.image-div {
+    background-image: url(images/drawers.jpg);
+    width: 17rem;
+    background-size: cover;
+    flex-shrink: 0;
+    border-radius: 10px 0 0 10px;
+}
+.text-div {
+    padding: 2rem 3rem 2rem 2.5rem;
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+}
+.header {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+}
+.text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--Desaturated-Dark-Blue);
+}
+.profil-photo {
+    float: left;
+    width: 11%;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.name {
+    font-weight: 700;
+    color: var(--Very-Dark-Grayish-Blue);
+    display: block;
+    margin-bottom: 0.2rem;
+}
+.date {
+    color: var(--Desaturated-Dark-Blue);
+}
+#btn-fas {
+    position: absolute;
+    left: 88%;
+    top: 75%;
+    background-color: var(--Light-Grayish-Blue);
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--Desaturated-Dark-Blue);
+}
+#btn-fas-m {
+    display: none;
+}
+/*.active {
+    background-color: var(--Very-Dark-Grayish-Blue) !important;
+    color: var(--Light-Grayish-Blue) !important;
+}*/
+/*.btn-img {
+    position: absolute;
+    left: 88%;
+    top: 75%;
+    background-color: var(--Light-Grayish-Blue);
+    padding: 10px;
+    border-radius: 50%;
+}*/
+#share {
+    width: 15.5rem;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    left: 72%;
+    top: 45%;
+    color: var(--Grayish-Blue);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.4rem;
+}
+#share-m {
+    display: none;
+}
+.share-div {
+    display: flex;
+    justify-content: space-around;
+}
+#triangle-down {
+    width: 0px;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid var(--Very-Dark-Grayish-Blue);
+    position: absolute;
+    left: 45%;
+    top: 85%;
+  }
+
+  @media screen and (max-width:728px) {
+    .main {
+        width: 23rem;
+        flex-direction: column;
+        position: static;
+        left: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+    }
+    .image-div {
+        width: 23rem;
+        height: 15rem;
+        border-radius: 10px 10px 0 0;
+    }
+    .text-div {
+        padding: 3rem 2rem 1.5rem 2rem;
+        border-radius: 0 0 10px 10px;
+    }
+    .text {
+        margin-bottom: 2rem;
+    }
+    .profil-photo {
+        width: 12%;
+    }
+    #btn-fas {
+        display: none;
+    }
+    #share {
+        display: none;
+    }
+    #btn-fas-m {
+        display: block;
+        position: absolute;
+        left: 80%;
+        top: 90%;
+        background-color: var(--Light-Grayish-Blue);
+        padding: 10px;
+        border-radius: 50%;
+        color: var(--Desaturated-Dark-Blue);
+        z-index: 2;
+    }
+    #share-m {
+        width: 23rem;
+        background-color: var(--Very-Dark-Grayish-Blue);
+        padding: 2rem 9rem 2rem 1rem;
+        border-radius: 0 0 10px 10px;
+        position: absolute;
+        display: none;
+        left: 0%;
+        top: 85%;
+        color: var(--Grayish-Blue);
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 0.4rem;
+    }
+  }
